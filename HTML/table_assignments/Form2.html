@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+
+    <style>
+        .content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <form method="post" class="content">
+        <!-- <fieldset> -->
+        <h1>Submission Form</h1>
+        <label>Name</label>
+        <label for="FName">First Name</label>
+        <input type="text" id="FName" name="FirstName"> &nbsp
+        <label for="LName">Last Name</label>
+        <input type="text" id="LName" name="LastName"><br><br>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" value placeholder="ex: myname@example.com">
+        <br><br>
+
+        <label for="Address">Address</label>
+        <label for="StreetAddress">Street Address</label>
+        <input name="StreeAddress" id="streeaddress"><br>
+        <label for="StreetAddressline2">Street Address Line 2</label>
+        <input name="StreetAddressline2" id="streeaddressline2"><br>
+        <label for="City">City</label>
+        <input name="City" id="city">
+        <label for="State">State</label>
+        <input name="State" id="state"><br>
+        <label for="ZipCode">Zip Code</label>
+        <input name="ZipCode" id="zipcode">
+        <label for="Country">Country</label>
+        <input list="Country" name="country">
+        <datalist id="Country">
+             <option value="America">
+             <option value="United Kingdom">
+             <option value="India">
+             <option value="Brazil">
+            <option value="Austrlia">
+        </datalist><br><br>
+
+        <label>Phone Number</label>
+        <label for="AreaCode"> Area Code</label>
+        <input type="text" name="AreaCode" id="areacode">
+        <label for="PhoneNumber">Phone Number</label>
+        <input type="text" name="PhoneNumber" id="PNumber" maxlength="10"><br><br>
+
+        <label for="AFPosition">Applying For Position</label>
+        <input list="AFPosition" name="afposition">
+        <datalist id="AFPosition">
+             <option value="Software Developer Trainee">
+             <option value="Software Developer">
+             <option value="Web Designer">
+        </datalist><br><br>
+
+        <label for="StartDate">Start Date</label>
+        <input type="date" id="startrdate" name="StartDate"  max="15-03-2023">
+        <br><br>
+
+        <label for="myfile">Uplead Your Resume</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="submit">
+    <!-- </fieldset> -->
+    </form>
+</body>
+</html>
